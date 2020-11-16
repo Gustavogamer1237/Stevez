@@ -13,6 +13,6 @@ run: async (client, message, args) => {
 		if(!args[0]) return message.channel.send("🔗 **| Insira o nome do canal.**");
 
 	message.guild.channels.create(args.slice(0).join(" "), {type: 'text'}) // 🔗 Text or voice
-	message.channel.send("🎉 **| Criado com sucesso!**")
+	message.channel.send("🎉 **| Criado com sucesso.**")
 }
 }
