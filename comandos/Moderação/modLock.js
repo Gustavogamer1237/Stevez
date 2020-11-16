@@ -16,11 +16,13 @@ module.exports = {
     // Realiza as funções depois do comando.
    message.channel.send(`<:${emoji.name}:${emoji.id}>** | Canal bloqueado por ${message.author}**`)
    message.react(`<:${emoji2.name}:${emoji2.id}>`)
-   message.channel.overwritePermissions(everyone,[
-  {
-     deny: ['SEND_MESSAGES', 'ADD_REACTIONS'],
-  },
-]);
-  }
+   message.channel.overwritePermissions(
+            message.guild.id, {
+                SEND_MESSAGES: false,
+                ATTACH_FILES: false
+            }
+        )
+
+   	}
 }
 
