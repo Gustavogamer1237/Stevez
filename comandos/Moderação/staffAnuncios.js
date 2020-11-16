@@ -14,12 +14,12 @@
     
         if(!canal) return message.channel.send("Não foi possivel encontrar esse canal! Utilize: !say <#canal> <aviso>");
         if(!aviso) return message.channel.send("Utilize: !say <#canal> <aviso>");
-    
+    	canal.send("@everyone");
         let embed = new Discord.MessageEmbed()
         .setTitle("Anúncio da Staff")
         .setColor("#ff1f1f")
         .setDescription(aviso)
-        .setFooter(`Aviso enviado por ${message.author.tag}`, message.author.displayAvatarURL());
+        .setFooter(`Aviso enviado por ${message.author.tag} •`, message.author.displayAvatarURL());
         
         canal.send(embed);
 
