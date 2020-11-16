@@ -9,17 +9,19 @@
   run: async (client, message, args) => {
   	const Discord = require ('discord.js');
   	if (!message.member.hasPermission("ADMINISTRATOR")) return
-  		let canal = message.mentions.channels.first()
-  		let avisoMensagem = args.slice(1).join(" ");
-  	if(!avisoMensagem) return message.reply("Sem texto.");
-
-  	let embed = new Discord.MessageEmbed()
-  	.setTitle(`Anúncio - ${message.author.username}`)
-  	.setColor('#ff1f1f')
-  	.setFooter(`Desenvolvido por Byu#0001`, message.author.displayAvatarURL())
-  	.setDescription(avisoMensagem)
-
-  	canal.send(embed)
+  		const canal = message.mentions.channels.first();
+        const aviso = args.slice(1).join(" ");
+    
+        if(!canal) return message.channel.send("Não foi possivel encontrar esse canal! Utilize: !say <#canal> <aviso>");
+        if(!aviso) return message.channel.send("Utilize: !say <#canal> <aviso>");
+    
+        let embed = new Discord.MessageEmbed()
+        .setTitle("⚠️ Aviso ⚠️")
+        .setColor("RANDOM")
+        .setDescription(aviso)
+        .setFooter(`Aviso enviado por ${message.author.tag}`, message.author.displayAvatarURL);
+        
+        canal.send(embed);
 
   }
 }
