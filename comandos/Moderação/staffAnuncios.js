@@ -16,10 +16,10 @@
         if(!aviso) return message.channel.send("Utilize: !say <#canal> <aviso>");
     
         let embed = new Discord.MessageEmbed()
-        .setTitle("⚠️ Aviso ⚠️")
-        .setColor("RANDOM")
+        .setTitle("Anúncio da Staff")
+        .setColor("#ff1f1f")
         .setDescription(aviso)
-        .setFooter(`Aviso enviado por ${message.author.tag}`, message.author.displayAvatarURL);
+        .setFooter(`Aviso enviado por ${message.author.tag}`, message.author.displayAvatarURL());
         
         canal.send(embed);
 
