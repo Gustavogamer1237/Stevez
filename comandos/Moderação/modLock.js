@@ -16,7 +16,7 @@ module.exports = {
     // Realiza as funções depois do comando.
    message.channel.send(`<:${emoji.name}:${emoji.id}>** | Canal bloqueado por ${message.author}**`)
    message.react(`<:${emoji2.name}:${emoji2.id}>`)
-   channel.overwritePermissions(everyone,[
+   message.channel.overwritePermissions(everyone,[
   {
      deny: ['SEND_MESSAGES', 'ADD_REACTIONS'],
   },
