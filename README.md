@@ -1,6 +1,6 @@
 
 <p align="center">
-<img width="65%" src="https://media.discordapp.net/attachments/751692287880462478/775113331043205120/Stuve_pica_reta.png">
+<img width="35%" src="https://media.discordapp.net/attachments/751692287880462478/775113331043205120/Stuve_pica_reta.png">
 <br>
 
 <h1 align="center">⭐ SteveZ BOT ⭐</h1>
