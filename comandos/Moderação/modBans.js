@@ -10,7 +10,7 @@
 
 run: async (client, message, args) => {
 	const Discord = require('discord.js');
-    let banned = message.mentions.users.first() || client.users.resolve(args[0]);
+    let banned = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
     let reason = args.slice(1).join(" ");
   
     // Mensagens
