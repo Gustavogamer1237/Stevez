@@ -21,7 +21,6 @@
         .setDescription(aviso)
         .setFooter(`Aviso enviado por ${message.author.tag}`, message.author.displayAvatarURL());
         
-        canal.send(embed).then(await message.react('🎉'))
-
+        canal.send(embed).then(m => m.react('🎉'))
   }
 }
