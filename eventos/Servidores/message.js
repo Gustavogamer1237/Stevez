@@ -15,7 +15,6 @@ module.exports = async (client, message) => { // NOTA: Todos os eventos necessit
       
     const args = message.content.slice(prefix.length).trim().split(/ +/g) // Definir os argumentos através de uma constante "args", que é um array.
     const comando = args.shift().toLowerCase() // Definir o comando como a palavra que vem junta ao prefixo.
-if (!message.member.hasPermission(`MANAGE_CHANNELS`)) return 
     /*
       Exemplo:  !say oi, eu sou um bot muito daora.
                 | |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
