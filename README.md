@@ -11,4 +11,6 @@ Se você precisa usar o bot, aconselho seriamente em fazer self-hosting do bot, 
 
 
 ## 📁 Estrutura do projeto
-* Em breve.
+* ⚙ **Comandos**
+
+> Pasta principal, aonde é localizado todos os comandos do bot. Os mesmos são separados por categorias em subpastas, como por exemplo os de Geral, moderação e de diversão, tudo separado para conseguirmos visualizar a utilidade de cada comando.
