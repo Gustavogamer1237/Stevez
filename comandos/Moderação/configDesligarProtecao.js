@@ -1,6 +1,6 @@
  module.exports = {
   config: {
-    nome: 'unraid',                                                   
+    nome: 'configDesligarProtecao',                                                   
     aliases: ['raidoff', 'atoff', 'antraidoff'],                               
     descricao: 'Comando que é anti-raid',     
     utilizacao: '',                                               

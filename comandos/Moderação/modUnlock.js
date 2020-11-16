@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    nome: 'unlock-chat',                                                   
+    nome: 'modUnlock',                                                   
     aliases: ['unlock', 'ulock', 'unchat'],                               
     descricao: 'Comando que desbloqueia o chat.',     
     utilizacao: '',                                               

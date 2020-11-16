@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    nome: 'lock-chat',                                                   
+    nome: 'modLock',                                                   
     aliases: ['lock', 'lc', 'lchat'],                               
     descricao: 'Comando que bloqueia o chat.',     
     utilizacao: '',                                               

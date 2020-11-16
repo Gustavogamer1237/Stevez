@@ -1,6 +1,6 @@
  module.exports = {
   config: {
-    nome: 'ban',                                                   
+    nome: 'modBans',                                                   
     aliases: ['ban', 'bn', 'ban'],                               
     descricao: 'Comando que bane usúarios do servidor.',     
     utilizacao: '',                                               

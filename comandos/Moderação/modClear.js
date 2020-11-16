@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    nome: 'clear',                                                   
+    nome: 'modClear',                                                   
     aliases: ['clear', 'cl', 'limpar'],                               
     descricao: 'Comando que limpa',     
     utilizacao: '',                                               
