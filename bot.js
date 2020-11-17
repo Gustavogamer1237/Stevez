@@ -13,6 +13,7 @@
 const { Client, Collection } = require('discord.js')
 const { token } = require("./config.json")
 const Discord = require('discord.js')
+console.log("teste")
  
 /*
   Usaremos o nome "client" para nos referirmos ao bot. Você pode trocar por "bot", ou o que preferir.
