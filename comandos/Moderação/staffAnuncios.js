@@ -19,7 +19,7 @@
         .setTitle("📌 Anúncio da Staff")
         .setColor("#ff1f1f")
         .setDescription(aviso)
-        .setFooter(`Aviso enviado por ${message.author.tag}`, message.author.displayAvatarURL(), msg.createdAt);
+        .setFooter(`Aviso enviado por ${message.author.tag}`, message.author.displayAvatarURL(), message.createdAt);
         
         canal.send(embed).then(m => m.react('🎉'))
   }
